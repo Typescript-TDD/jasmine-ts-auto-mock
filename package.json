@@ -1,0 +1,47 @@
+{
+  "name": "jasmine-ts-auto-mock",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.d.ts",
+    "index.ts",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "karma start config/karma/karma.config.js",
+    "build": "webpack --config config/webpack.build.js"
+  },
+  "keywords": [
+    "typescript",
+    "spy",
+    "mock",
+    "auto",
+    "jasmine"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uittorio/ts-auto-mock.git"
+  },
+  "author": "Vittorio Guerriero",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "3.3.5",
+    "@types/node": "10.12.18",
+    "@types/webpack-env": "1.13.6",
+    "awesome-typescript-loader": "5.2.1",
+    "jasmine": "3.3.1",
+    "karma": "3.1.4",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "2.0.1",
+    "karma-webpack": "3.0.5",
+    "puppeteer": "1.11.0",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.1.2"
+  },
+  "dependencies": {
+    "ts-auto-mock": "0.0.10"
+  }
+}

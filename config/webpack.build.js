@@ -3,7 +3,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     resolve: {
         extensions: ['.ts', '.js']
     },
@@ -19,7 +19,6 @@ module.exports = {
         index: ['./index.ts']
     },
     output: {
-        libraryTarget: "commonjs",
         filename: "[name].js",
         path: path.resolve(__dirname, "..")
     }

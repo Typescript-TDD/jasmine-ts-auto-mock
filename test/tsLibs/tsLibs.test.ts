@@ -1,6 +1,6 @@
 import { createMock, Mock } from "ts-auto-mock";
 
-describe('tsLib ', () => {
+describe('tsLib', () => {
 	it('should return an unknown spy', () => {
 		interface Interface {
 			a: Function;
