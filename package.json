@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "index.d.ts",
-    "index.ts",
-    "index.js"
+    "index.ts"
   ],
   "scripts": {
-    "test": "karma start config/karma/karma.config.js",
-    "build": "webpack --config config/webpack.build.js"
+    "test": "karma start config/karma/karma.config.js"
   },
   "keywords": [
     "typescript",
