@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "index.ts"
+    "index.ts",
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
-    "test": "karma start config/karma/karma.config.js"
+    "test": "karma start config/karma/karma.config.js",
+    "build": "webpack --config config/webpack.build.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "typescript",
@@ -39,6 +43,6 @@
     "webpack-cli": "3.1.2"
   },
   "dependencies": {
-    "ts-auto-mock": "0.0.10"
+    "ts-auto-mock": "0.0.13"
   }
 }
