@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/uittorio/ts-auto-mock.git"
+    "url": "https://github.com/uittorio/jasmine-ts-auto-mock.git"
   },
   "author": "Vittorio Guerriero",
   "license": "ISC",
