@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "index.ts"
+    "index.ts",
+    "index.js",
+    "index.d.ts"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --config config/webpack.build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "typescript",
     "spy",
@@ -22,7 +27,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "3.3.5",
-    "typescript": "3.2.2"
+    "@types/node": "10.12.18",
+    "@types/webpack-env": "1.13.6",
+    "awesome-typescript-loader": "5.2.1",
+    "typescript": "3.2.2",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1"
   },
   "dependencies": {
     "ts-auto-mock": "0.0.14"
