@@ -13,7 +13,7 @@ module.exports = {
                 options: {
                     getCustomTransformers: program => ({
                         before: [
-                            tsAutoMockTransformer.transformer(program)
+                            tsAutoMockTransformer.default(program)
                         ]
                     })
                 }

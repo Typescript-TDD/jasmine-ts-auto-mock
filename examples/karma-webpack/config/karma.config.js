@@ -1,7 +1,8 @@
-const webpackConfig = require('./../webpack.test.js');
+const tsAutoMockTransformer = require('ts-auto-mock/transformer');
+const webpackConfig = require('./webpack.test.js');
 
-module.exports = function(config, url) {
-    return {
+module.exports = function(config) {
+    const _config = {
         basePath: '',
         frameworks: ['jasmine'],
         webpack: webpackConfig,
@@ -10,12 +11,12 @@ module.exports = function(config, url) {
         },
         files: [
             {
-                pattern: url,
+                pattern: "../test/entry.ts",
                 watched: false
             }
         ],
         preprocessors: {
-            [url]: ['webpack']
+            "../test/entry.ts" : ['webpack']
         },
         webpackServer: {
             noInfo: true
@@ -29,4 +30,5 @@ module.exports = function(config, url) {
         singleRun: true
     }
 
+    config.set(_config);
 };
