@@ -1,7 +1,6 @@
 # Jasmine Ts Auto Mock
 
-This is a library that wrap ts-auto-mock to use it with jasmine
-[ts-auto-mock](https://github.com/uittorio/ts-auto-mock)
+This is a library that extend [ts-auto-mock](https://github.com/uittorio/ts-auto-mock) to be used with jasmine
 
 The intention of the library is to automatically assign spies to mocks giving you type safety
 
