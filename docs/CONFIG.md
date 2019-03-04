@@ -19,7 +19,7 @@ module.exports = function(config) {
             }
         ],
         preprocessors: {
-            "../test/entry.ts" : // see below ['webpack']
+            "../entryFile.ts" : // see below ['webpack']
         },
         ...
     };
@@ -29,6 +29,7 @@ module.exports = function(config) {
 ```
 ##### karma-webpack-entry-file
 ```ts 
+//entryFile.ts
 import "jasmine-ts-auto-mock";
 
 const context = require.context('', true, /\.test\.ts$/);
