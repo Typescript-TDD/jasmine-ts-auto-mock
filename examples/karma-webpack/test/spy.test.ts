@@ -1,4 +1,4 @@
-import { createMock, mockedMethod, On } from "ts-auto-mock";
+import { createMock, Mock, mockedMethod, On } from "ts-auto-mock";
 
 describe('when testing with the mock factory jasmine', () => {
     it('should create a spy for methods with the return value', () => {
@@ -6,7 +6,7 @@ describe('when testing with the mock factory jasmine', () => {
             a(): string;
         }
 
-        const mock: Interface = createMock<Interface>();
+        const mock: Mock<Interface> = createMock<Interface>();
 
         expect(mock.a()).toBe("");
         expect(mock.a).toHaveBeenCalledWith();
@@ -17,7 +17,7 @@ describe('when testing with the mock factory jasmine', () => {
             a(): string;
         }
 
-        const mock: Interface = createMock<Interface>();
+        const mock: Mock<Interface> = createMock<Interface>();
         const aSpy = On.Mock(mock).get(mockedMethod(x => x.a));
         let callTimes = aSpy.calls.count();
         expect(callTimes).toBe(0);
@@ -31,7 +31,7 @@ describe('when testing with the mock factory jasmine', () => {
             b: number;
         }
 
-        const mock: Interface = createMock<Interface>();
+        const mock: Mock<Interface> = createMock<Interface>();
         expect(mock.b).toBe(0);
     });
 
@@ -42,7 +42,7 @@ describe('when testing with the mock factory jasmine', () => {
             };
         }
 
-        const mock: Interface = createMock<Interface>();
+        const mock: Mock<Interface> = createMock<Interface>();
         expect(mock.b.c()).toBe("");
         expect(mock.b.c).toHaveBeenCalledWith();
         const callTimes = (mock.b.c as jasmine.Spy).calls.count();

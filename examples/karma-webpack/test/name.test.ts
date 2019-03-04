@@ -1,4 +1,4 @@
-import { createMock, mockedMethod, On } from "ts-auto-mock";
+import { createMock, Mock, mockedMethod, On } from "ts-auto-mock";
 
 describe('names', () => {
     it('should give a name to the spy', () => {
@@ -7,7 +7,7 @@ describe('names', () => {
             b: () => string;
         }
 
-        const mock: Interface = createMock<Interface>();
+        const mock: Mock<Interface> = createMock<Interface>();
         const aSpy = On.Mock(mock).get(mockedMethod(x => x.a));
         const bSpy = On.Mock(mock).get(mockedMethod(x => x.b));
 
