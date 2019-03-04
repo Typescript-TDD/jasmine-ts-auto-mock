@@ -1,4 +1,3 @@
-const tsAutoMockTransformer = require('ts-auto-mock/transformer');
 const webpackConfig = require('./webpack.test.js');
 
 module.exports = function(config) {
@@ -28,7 +27,7 @@ module.exports = function(config) {
         autoWatch: true,
         browsers: ['ChromeHeadless'],
         singleRun: true
-    }
+    };
 
     config.set(_config);
 };
