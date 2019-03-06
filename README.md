@@ -21,20 +21,24 @@ typescript@^3.2.2
 [jasmine-karma-webpack](examples/karma-webpack)
 
 ## Usage
+1) create an interface
 ```ts
-import { Mock, createMock } from 'ts-auto-mock';
-
-interface Person {
-  id: string;
-  getName(): string; // jasmine.Spy  
+interface Interface {
+    methodToSpy: () => string
 }
-const mock = createMock<Person>(); // creation of mock
-const spy = On.Mock(mock).get(mockedMethod(person => person.getName)); // get the SPY
-
-mock.getName(); // call the function
-
+```
+1) create a mock
+```ts
+const mock: Interface = createMock<Interface>();
+```
+2) get the method spy 
+```ts
+const spy: jasmine.Spy = On.Mock(mock).get(mockedMethod(mock => mock.methodToSpy));
+```
+3) trigger the method
+```ts
+someMethodThatWillTriggerInterfaceA();
 expect(spy).toHaveBeenCalled();
-
 ```
 
 ## Authors
