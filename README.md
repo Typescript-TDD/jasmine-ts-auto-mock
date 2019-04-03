@@ -20,25 +20,36 @@ typescript@^3.2.2
 ## Examples
 [jasmine-karma-webpack](examples/karma-webpack)
 
+
 ## Usage
 1) create an interface
 ```ts
 interface Interface {
-    methodToSpy: () => string
+    methodToMock: () => string
 }
 ```
-1) create a mock
+2) create a mock
 ```ts
 const mock: Interface = createMock<Interface>();
 ```
-2) get the method spy 
+3) get the method mock 
+
+You can get the method spy in 2 different ways
+
+Through method
 ```ts
-const spy: jasmine.Spy = On.Mock(mock).get(mockedMethod(mock => mock.methodToSpy));
+const mockMethod: jasmine.Spy = On(mock).get(method(mock => mock.methodToMock));
 ```
-3) trigger the method
+
+Through string
 ```ts
-someMethodThatWillTriggerInterfaceA();
-expect(spy).toHaveBeenCalled();
+const mockMethod: Jest.Spy = On(mock).get(method('methodToMock'));
+```
+
+4) trigger the method
+```ts
+someMethodThatWillTriggerInterfacemethodToMock();
+expect(mockMethod).toHaveBeenCalled();
 ```
 
 ## Authors

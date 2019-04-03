@@ -1,4 +1,4 @@
-import { createMock, mockedMethod, On } from "ts-auto-mock";
+import { createMock, method, On } from "ts-auto-mock";
 
 describe('when testing with the mock factory jasmine', () => {
     it('should create a spy for methods with the return value', () => {
@@ -18,7 +18,7 @@ describe('when testing with the mock factory jasmine', () => {
         }
 
         const mock: Interface = createMock<Interface>();
-        const aSpy = On.Mock(mock).get(mockedMethod(x => x.a));
+        const aSpy = On(mock).get(method(x => x.a));
         let callTimes = aSpy.calls.count();
         expect(callTimes).toBe(0);
         mock.a();
