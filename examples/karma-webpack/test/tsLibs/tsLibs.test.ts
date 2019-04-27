@@ -1,4 +1,5 @@
-import { createMock, method, On } from "ts-auto-mock";
+import { createMock } from "ts-auto-mock";
+import { method, On } from 'ts-auto-mock/extension';
 
 describe('tsLib', () => {
 	it('should return the name of spy', () => {
@@ -7,8 +8,8 @@ describe('tsLib', () => {
 		}
 
 		const mock: Interface = createMock<Interface>();
-		const aSpy = On(mock).get(method(x => x.a));
-		
+		const aSpy: jasmine.Spy = On(mock).get(method(x => x.a));
+
 		expect(aSpy.and.identity).toBe("a");
 
 		mock.a();

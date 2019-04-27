@@ -35,6 +35,6 @@
     "webpack-cli": "3.2.1"
   },
   "dependencies": {
-    "ts-auto-mock": "0.0.24"
+    "ts-auto-mock": "1.1.1"
   }
 }

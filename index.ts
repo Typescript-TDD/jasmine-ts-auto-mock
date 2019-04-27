@@ -1,11 +1,11 @@
-import { MockFactory } from "ts-auto-mock";
+import { Provider } from "ts-auto-mock/extension";
 
-MockFactory.instance.registerFactory((name: string, value: any) => {
+Provider.instance.provideMethod((name: string, value: any) => {
     return jasmine.createSpy(name).and.returnValue(value);
 });
 
 type ReturnType = jasmine.Spy;
 
-declare module 'ts-auto-mock' {
-	interface MockMethod<TR> extends ReturnType {}
+declare module 'ts-auto-mock/extension' {
+	interface Method<TR> extends ReturnType {}
 }
