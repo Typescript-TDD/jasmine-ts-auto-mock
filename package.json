@@ -4,13 +4,10 @@
   "description": "Jasmine test utility with automatic mock creation for interfaces and classes",
   "main": "index.js",
   "files": [
-    "index.ts",
-    "index.js",
-    "index.d.ts"
+    "index.ts"
   ],
   "scripts": {
-    "build": "webpack --config config/webpack.build.js",
-    "prepublishOnly": "npm run build"
+    "build": "webpack --config config/webpack.build.js"
   },
   "keywords": [
     "typescript",
