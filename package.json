@@ -22,15 +22,15 @@
   "author": "Vittorio Guerriero",
   "license": "ISC",
   "devDependencies": {
-    "@types/jasmine": "3.3.5",
-    "@types/node": "10.12.18",
-    "@types/webpack-env": "1.13.6",
+    "@types/jasmine": "3.4.0",
+    "@types/node": "12.7.2",
+    "@types/webpack-env": "1.14.0",
     "awesome-typescript-loader": "5.2.1",
-    "typescript": "3.2.2",
-    "webpack": "4.28.4",
-    "webpack-cli": "3.2.1"
+    "typescript": "3.5.3",
+    "webpack": "4.39.2",
+    "webpack-cli": "3.3.7"
   },
   "dependencies": {
-    "ts-auto-mock": "1.1.4"
+    "ts-auto-mock": "1.2.0"
   }
 }
