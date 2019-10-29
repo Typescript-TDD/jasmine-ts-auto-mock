@@ -1,6 +1,6 @@
 {
   "name": "jasmine-ts-auto-mock",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Jasmine test utility with automatic mock creation for interfaces and classes",
   "files": [
     "index.ts"
