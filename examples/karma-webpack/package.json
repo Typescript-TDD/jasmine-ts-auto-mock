@@ -3,19 +3,19 @@
     "test": "karma start config/karma.config.js"
   },
   "devDependencies": {
-    "@types/jasmine": "3.4.0",
-    "@types/node": "12.7.2",
-    "@types/webpack-env": "1.14.0",
+    "@types/jasmine": "3.4.4",
+    "@types/node": "12.11.7",
+    "@types/webpack-env": "1.14.1",
     "awesome-typescript-loader": "5.2.1",
-    "jasmine": "3.4.0",
-    "karma": "4.2.0",
+    "jasmine": "3.5.0",
+    "karma": "4.4.1",
     "karma-chrome-launcher": "3.1.0",
     "karma-jasmine": "2.0.1",
     "karma-webpack": "4.0.2",
-    "puppeteer": "1.19.0",
-    "ts-node": "8.3.0",
-    "typescript": "3.5.3",
-    "webpack": "4.39.2",
-    "webpack-cli": "3.3.7"
+    "puppeteer": "2.0.0",
+    "ts-node": "8.4.1",
+    "typescript": "3.6.4",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9"
   }
 }
