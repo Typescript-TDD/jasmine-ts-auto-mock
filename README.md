@@ -56,8 +56,8 @@ expect(mockMethod).toHaveBeenCalled();
 
 ## Authors
 
-* **Vittorio Guerriero**
-* **Giulio Caprino** 
+* [**Vittorio Guerriero**](https://github.com/uittorio)
+* [**Giulio Caprino**](https://github.com/pmyl)
 
 ## License
 
