@@ -1,5 +1,7 @@
 # Jasmine Ts Auto Mock
 
+[![Actions Status](https://github.com/Typescript-TDD/jasmine-ts-auto-mock/workflows/Master/badge.svg)](https://github.com/Typescript-TDD/jasmine-ts-auto-mock/actions)
+
 This is a library that extend [ts-auto-mock](https://github.com/uittorio/ts-auto-mock) to be used with jasmine
 
 The intention of the library is to automatically assign spies to mocks giving you type safety
