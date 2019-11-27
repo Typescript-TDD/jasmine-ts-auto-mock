@@ -14,13 +14,14 @@ typescript@^3.2.2
 ## Installation
 
 - A Transformer needs to be provided at compile time. There are different ways to do it.
-[Please read the following guide to find your configuration](https://github.com/uittorio/ts-auto-mock/blob/master/docs/TRANSFORMER.md)
+[Please read the following guide to find your configuration](https://github.com/Typescript-TDD/ts-auto-mock/blob/master/docs/TRANSFORMER.md)
 
 - provide jasmine-ts-auto-mock before your test
 [Please read the following guide to find your configuration](docs/CONFIG.md)
 
 ## Examples
 [jasmine-karma-webpack](examples/karma-webpack)
+[angular-cli-tspatch](examples/angular-cli-tspatch)
 
 
 ## Usage
