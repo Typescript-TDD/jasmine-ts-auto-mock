@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "examples/angular-cli-tspatch/package.json",
+        "examples/karma-webpack/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
