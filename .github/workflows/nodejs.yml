@@ -23,5 +23,8 @@ jobs:
         npm run build
         npm --prefix examples/karma-webpack install
         npm --prefix examples/karma-webpack test
+        npm --prefix examples/angular-cli-tspatch install
+        npm --prefix examples/angular-cli-tspatch run install-ts-patch
+        npm --prefix examples/angular-cli-tspatch test
       env:
         CI: true
