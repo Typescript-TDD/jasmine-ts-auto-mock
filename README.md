@@ -20,8 +20,20 @@ typescript@^3.2.2
 [Please read the following guide to find your configuration](docs/CONFIG.md)
 
 ## Examples
-[jasmine-karma-webpack](examples/karma-webpack)
-[angular-cli-tspatch](examples/angular-cli-tspatch)
+- [jasmine-karma-webpack](examples/karma-webpack)
+- [angular-cli-tspatch](examples/angular-cli-tspatch)
+
+If you are using angular with typescript 3.7 you need to follow the solution in this issue:
+
+https://github.com/angular/angular-cli/issues/16071
+
+Add this in the polyfill until angular support typescript 3.7
+```ts
+// @ts-ignore
+window.__importDefault = function(mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+};
+```
 
 
 ## Usage

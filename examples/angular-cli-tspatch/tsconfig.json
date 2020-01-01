@@ -22,6 +22,9 @@
       { "transform": "ts-auto-mock/transformer" }
     ]
   },
+  "paths": {
+    "jasmine-ts-auto-mock": ["../.."]
+  },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
