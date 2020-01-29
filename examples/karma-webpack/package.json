@@ -5,7 +5,7 @@
   "devDependencies": {
     "@types/jasmine": "3.5.0",
     "@types/node": "12.12.15",
-    "@types/webpack-env": "1.14.1",
+    "@types/webpack-env": "1.15.1",
     "awesome-typescript-loader": "5.2.1",
     "jasmine": "3.5.0",
     "karma": "~4.4.1",
