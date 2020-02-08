@@ -23,12 +23,15 @@
   "author": "Vittorio Guerriero",
   "license": "ISC",
   "devDependencies": {
-    "@types/jasmine": "3.5.0",
-    "@types/node": "12.12.15",
-    "ts-node": "8.5.4",
-    "typescript": "~3.7.2"
+    "@types/jasmine": "3.5.3",
+    "@types/node": "13.7.0",
+    "ts-auto-mock": "^1.5.4",
+    "ts-node": "8.6.2",
+    "tslib": "^1.10.0",
+    "typescript": "~3.7.5"
   },
-  "dependencies": {
-    "ts-auto-mock": "1.5.0"
+  "dependencies": {},
+  "peerDependencies": {
+    "ts-auto-mock": "^1.0.0"
   }
 }

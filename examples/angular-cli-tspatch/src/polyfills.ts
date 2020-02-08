@@ -57,10 +57,7 @@
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
 
-// @ts-ignore
-window.__importDefault = function(mod) {
-    return mod && mod.__esModule ? mod : { default: mod };
-};
+
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
