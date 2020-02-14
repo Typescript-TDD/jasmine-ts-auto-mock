@@ -23,7 +23,7 @@
   "author": "Vittorio Guerriero",
   "license": "ISC",
   "devDependencies": {
-    "@types/jasmine": "3.5.3",
+    "@types/jasmine": "3.5.4",
     "@types/node": "13.7.0",
     "ts-auto-mock": "^1.5.4",
     "ts-node": "8.6.2",
