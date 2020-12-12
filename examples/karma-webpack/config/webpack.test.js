@@ -9,7 +9,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript-loader',
+                loader: 'ts-loader',
                 options: {
                     getCustomTransformers: program => ({
                         before: [
