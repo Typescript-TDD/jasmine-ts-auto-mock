@@ -5,6 +5,9 @@
     "types": [
       "jasmine",
       "node"
+    ],
+    "plugins": [
+      { "transform": "ts-auto-mock/transformer"}
     ]
   },
   "files": [
